@@ -25,7 +25,7 @@ public class 爬牆 {
 	public 爬牆(int inputCount,int outputCount){
 		trainingSet = new TrainingSet(inputCount,outputCount);
 		
-		System.out.println("this is test file");
+		System.out.println("this is test filedddd");
 	}
 	
 	
