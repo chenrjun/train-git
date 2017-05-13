@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+
+
+		<!-- SQL方言，這邊設定的是MySQL -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<!-- JDBC驅動程式 -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<!-- JDBC URL -->
+		<property name="connection.url">jdbc:mysql://localhost:3306/kinect</property>
+		<!-- 資料庫使用者 -->
+		<property name="connection.username">root</property>
+		<!-- 資料庫密碼 -->
+		<property name="connection.password">qqqqqq</property>
+
+		<!-- 以下設置物件與資料庫表格映射文件 -->
+		
+		
+		 <!-- 最小的連線數目 -->
+
+        <property name="c3p0.min_size">10</property>
+
+        <!-- 最大的連線數目 -->
+
+        <property name="c3p0.max_size">30</property>
+
+        <!-- 允許的閒置時間 -->
+
+        <property name="c3p0.timeout">300</property>
+
+        <!-- 最大的Statement數目 -->
+
+        <property name="c3p0.max_statements">0</property>
+
+        <!--達到max_size的用量後一次可以再追加多少的連線數 -->
+
+        <property name="c3p0.acquire_increment">0</property>
+
+        <!-- 單位為秒，確認是否有連線閒置 -->
+
+		
+	</session-factory>
+
+</hibernate-configuration>
